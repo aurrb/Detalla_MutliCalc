@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/bPlus"
+        android:layout_width="77dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="327dp"
+        android:text="@string/buttonPlusText"
+        android:backgroundTint="@color/main"
+        app:layout_constraintEnd_toStartOf="@+id/bMinus"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bMinus"
+        android:layout_width="77dp"
+        android:layout_height="61dp"
+        android:text="@string/ButtonMinusText"
+        android:backgroundTint="@color/main"
+        app:layout_constraintEnd_toStartOf="@+id/bMultiply"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/bPlus"
+        app:layout_constraintTop_toTopOf="@+id/bPlus" />
+
+    <Button
+        android:id="@+id/bMultiply"
+        android:layout_width="77dp"
+        android:layout_height="61dp"
+        android:text="@string/buttonMultiplyText"
+        android:backgroundTint="@color/main"
+        app:layout_constraintEnd_toStartOf="@+id/bDivide"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/bMinus"
+        app:layout_constraintTop_toTopOf="@+id/bMinus" />
+
+    <Button
+        android:id="@+id/bDivide"
+        android:layout_width="77dp"
+        android:layout_height="61dp"
+        android:backgroundTint="@color/main"
+        android:text="@string/ButtonDivideText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/bMultiply"
+        app:layout_constraintTop_toTopOf="@+id/bMultiply" />
+
+    <Button
+        android:id="@+id/bModu"
+        android:layout_width="163dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="471dp"
+        android:text="@string/ButtonModuloText"
+        android:backgroundTint="@color/main"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/First"
+        android:layout_width="243dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="@string/placeholderNumber"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.149" />
+
+    <EditText
+        android:id="@+id/Second"
+        android:layout_width="243dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="@string/placeholderNumber"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.329" />
+
+    <TextView
+        android:id="@+id/firstTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/firstTextViewText"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.068" />
+
+    <TextView
+        android:id="@+id/secondTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/secondTextViewText"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.251" />
+
+    <TextView
+        android:id="@+id/thirdTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="It equals to"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/result"
+        app:layout_constraintHorizontal_bias="0.957"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.869" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="160dp"
+        android:text="@string/placeholderNumber"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.869" />
+</androidx.constraintlayout.widget.ConstraintLayout>

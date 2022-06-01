@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Detalla_Calculator</string>
+    <string name="buttonPlusText">+</string>
+    <string name="ButtonMinusText">-</string>
+    <string name="buttonMultiplyText">x</string>
+    <string name="ButtonDivideText">/</string>
+    <string name="ButtonModuloText">%</string>
+    <string name="placeholderNumber">0.0</string>
+    <string name="firstTextViewText">First Variable</string>
+    <string name="secondTextViewText">Second Variable</string>
+</resources>
